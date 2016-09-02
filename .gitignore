@@ -1,0 +1,3 @@
+py27-venv/
+*.pyc
+anscombe.gif
