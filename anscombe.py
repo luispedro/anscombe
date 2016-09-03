@@ -73,6 +73,8 @@ with imageio.get_writer('anscombe.gif', mode='I') as writer:
             ax.plot([4,20], [y.mean() - y.std(), y.mean() - y.std()], 'k:')
             ax.scatter(x, y, c='#990000', s=40)
 
+            ax.text(4, 12, "Anscombe's Quartet")
+            ax.text(16, 4, "Luis Pedro Coelho\nhttp://luispedro.org", verticalalignment='top', multialignment='left')
             ax.set_ylim((2.5,13.))
             ax.set_xlim((3.,21.))
             writer.append_data(fig2np(fig))
